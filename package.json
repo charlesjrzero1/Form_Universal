@@ -1,0 +1,22 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesjrzero1/Form_Universal.git"
+  },
+  "keywords": [
+    "19Pedraazul98"
+  ],
+  "author": "Charles Junio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesjrzero1/Form_Universal/issues"
+  },
+  "homepage": "https://github.com/charlesjrzero1/Form_Universal#readme"
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="js.js"></script>  
+</head>
+<body>
+  
+  
+  <!--Inicio do Navbar-->
+
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="./img/assignment_FILL0_wght300_GRAD0_opsz48.png" width="" height="">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                 Pagina Inicial
+                </a>
+          
+                <a class="navbar-item">
+                  Documentação Da plataforma
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Ferramentas
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Sobre a empresa
+                    </a>
+                    <a class="navbar-item">
+                      Trabalhe conosco
+                    </a>
+                    <a class="navbar-item">
+                      Contato.
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Deixe Sua Opnião
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+<br>
+
+
+
+ <!--Inicio do container Form separado por Columns Para dividir a tela -->
+
+
+
+<div class="container">
+  <div class="columns" >
+   <div class="column is-5" id="form">
+
+<!--Div Campo nome -->    
+
+<div class="field">
+  <label class="label">Nome</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input" id="Nome">
+  </div>
+</div>
+
+<!--Div Campo User, com todas configurações de Formatação de placeholter-->
+
+<div class="field">
+  <label class="label">Username</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" placeholder="Text input" value="" id="Username">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </div>
+  <p class="help is-success">This username is available</p>
+</div>
+
+<!--Email-->
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="Email">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+  </div>
+  <p class="help is-danger">This email is invalid</p>
+</div>
+
+<!--Elemento Label com opçoes em caixa .-->
+
+<div class="field">
+  <label class="label">Selecione Abaixo</label>
+  <div class="control">
+    <div class="select">
+      <select id="Select">
+        <option>Selecione as opções</option>
+        <option>Administrativo</option>
+        <option>Financeiro</option>
+        <option>Operacional</option>
+        <option>Terceirizado</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!--Caixa Textarea-->
+
+<div class="field">
+  <label class="label">Mensagem </label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea" id="Textarea"> </textarea>
+  </div>
+</div>
+
+
+
+<div class="field">
+  <div class="control">
+    <label class="checkbox">
+      <input type="checkbox">
+      I agree to the <a href="#">termos e condições</a>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="radio">
+      <input type="radio" name="question">
+      Sim
+    </label>
+    <label class="radio">
+      <input type="radio" name="question">
+      Não
+    </label>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link" onclick="print()">Finalizar</button>
+  </div>
+  <div class="control">
+    <button class="button is-link is-light">Cancelar</button>
+  </div>
+</div>
+  </div>
+  <div class="column is-5">
+    <div class="container">
+      <center><p class="abc"> Hello world </p></center>
+      <p>    Olá faça seu cadastro, para voce ter acesso as funcionalidades da plataforma.</p>
+      
+      <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/No3Q2COl8SEnu" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/jodeus-processing-No3Q2COl8SEnu">via GIPHY</a></p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+
+<br>
+<br>
+
+
+<footer class="footer  is-primary">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Form</strong> by <a href="https://jgthms.com">Charles Oliveira</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>
